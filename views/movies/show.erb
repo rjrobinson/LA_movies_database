@@ -1,0 +1,16 @@
+<h1><%= @movie[0]['title']%></h1>
+<h2><%=@movie[0]['genre']%></h2>
+<h3><%=@movie[0]['studio']%></h3>
+
+<table>
+<tr>
+  <td>Actor</td>
+  <td>Role</td>
+</tr>
+<tr>
+  <%@actors.each do |actor|%>
+  <td><%=actor['actor']%></td>
+  <td><%=actor['role']%></td>
+</tr>
+<%end%>
+</table>

@@ -1,0 +1,19 @@
+<table>
+<tr>
+  <td>TITLE</td>
+  <td>YEAR</td>
+  <td>RATING</td>
+  <td>GENERE</td>
+  <td>STUDIO</td>
+</tr>
+<tr>
+  <%@movies.each do |movie|%>
+  <td><a href="movies/<%= movie['id']%>"><%= movie['title']%></a></td>
+  <td><%= movie['year']%></td>
+  <td><%= movie['rating']%></td>
+  <td><%= movie['genre']%></td>
+  <td><%= movie['studio']%></td>
+</tr>
+<%end%>
+</table>
+
